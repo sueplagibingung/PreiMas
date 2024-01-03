@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REKAP LIBURAN SAYA"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="400sp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/black"
+                    android:src="@drawable/tawangmangu"
+                    android:onClick="view_tw"
+                    />
+
+                <TextView
+                    android:id="@+id/Judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Tawangmangu"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subjudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Judul"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Tawangmangu, Karanganyar, Jawa Tengah"
+                    android:textSize="16dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/iclocation_tw"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/subjudul"
+                    android:layout_alignBottom="@+id/subjudul"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginEnd="-45dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_toStartOf="@+id/subjudul"
+                    android:background="@android:color/transparent"
+                    android:onClick="loktw"
+                    android:src="@drawable/location" />
+
+                <ImageButton
+                    android:id="@+id/favtw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iclocation_tw"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="fav_tw"
+                    android:src="@drawable/favorit"
+                    android:tag="putih" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="400sp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/black"
+                    android:src="@drawable/nataru"
+                    android:onClick="view_nataru"
+                    />
+
+                <TextView
+                    android:id="@+id/Judul1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="NATARU"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subjudul1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Judul1"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Night Market Ngarsopuro, Surakarta"
+                    android:textSize="16dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/iclocation_nataru"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/subjudul1"
+                    android:layout_alignBottom="@+id/subjudul1"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginEnd="-45dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_toStartOf="@+id/subjudul1"
+                    android:background="@android:color/transparent"
+                    android:onClick="loknataru"
+                    android:src="@drawable/location" />
+
+                <ImageButton
+                    android:id="@+id/favnataru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iclocation_nataru"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="fav_tw"
+                    android:src="@drawable/favorit"
+                    android:tag="putih" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
